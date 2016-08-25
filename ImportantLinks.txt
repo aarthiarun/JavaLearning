@@ -1,0 +1,7 @@
+https://github.com/goldmansachs/gs-collections-kata
+http://www.goldmansachs.com/gs-collections/documents/GS%20Collections%20Training%20Session%20and%20Kata%205.0.0.pdf
+http://www.functionaljava.org/examples-java8.html
+https://github.com/winterbe/java8-tutorial
+
+https://github.com/iluwatar/java-design-patterns
+http://webpro.github.io/programming-principles/

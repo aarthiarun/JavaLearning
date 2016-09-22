@@ -11,14 +11,14 @@ import java.util.Map;
 
 import static org.testng.Assert.assertEquals;
 
-public class JoinerTest {
+public class GuavaJoinTest {
 
-    private Joiner joiner = null;
+    private GuavaJoin guavaJoin = null;
     private List<String> cityList;
     @BeforeMethod
     public void beforeTest() {
         cityList = new ArrayList<>();
-        joiner = new Joiner();
+        guavaJoin = new GuavaJoin();
         cityList.add("Washington");
         cityList.add("New York City");
         cityList.add("Philadelphia");
@@ -29,7 +29,7 @@ public class JoinerTest {
     public void test_buildstring_should_skip_null(){
         cityList.add(null);
         String expected = "Washington|New York City|Philadelphia|Dallas";
-        String actual  = joiner.buildStringWithSkippingNull(cityList);
+        String actual  = guavaJoin.buildStringWithSkippingNull(cityList);
         assertEquals(actual,expected);
     }
 
@@ -37,7 +37,7 @@ public class JoinerTest {
     public void test_buildstring_should_replace_null(){
         cityList.add(null);
         String expected = "Washington|New York City|Philadelphia|Dallas|no value";
-        String actual  = joiner.buildStringWithNullValueReplacement(cityList);
+        String actual  = guavaJoin.buildStringWithNullValueReplacement(cityList);
         assertEquals(actual,expected);
     }
 

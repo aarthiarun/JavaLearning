@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Created by arunmohzi on 9/19/16.
  */
-public class Joiner {
+public class GuavaJoin {
 
     public String buildStringWithSkippingNull(List<String> stringList){
         return com.google.common.base.Joiner.on("|").skipNulls().join(stringList);
